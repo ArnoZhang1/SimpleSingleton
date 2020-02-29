@@ -7,8 +7,8 @@ import java.io.*;
  **/
 public class SeriableSingletonTest {
     public static void main(String[] args) {
-        SeriableSingleton singleton = SeriableSingleton.INSTANCE;
-        SeriableSingleton singleton2 = null;
+        SeriableSingleton singleton = null;
+        SeriableSingleton singleton2 = SeriableSingleton.INSTANCE;
         FileOutputStream fos = null;
         try {
             fos = new FileOutputStream("SeriableSingleton.obj");
